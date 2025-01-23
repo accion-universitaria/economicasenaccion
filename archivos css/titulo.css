@@ -9,7 +9,7 @@
 }
 
 /* Estilo para el contenedor de ExEA */
-.exa {
+.eco {
   display: flex;
   justify-content: flex-start; /* Alinea el logo de ExEA a la izquierda */
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 /* Logo de ExEA */
-.titulo-logo-exa {
+.titulo-logo-eco {
   width: 150px; /* Reducción considerable del tamaño del logo */
   height: auto;
 }
