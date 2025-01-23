@@ -9,60 +9,69 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../IMAGENES/imagen eco.png" type="image/png">
     <style>
-      .titulo {
-      display: flex; /* Usamos Flexbox para organizar los elementos */
-      flex-direction: row; /* Coloca los elementos en fila */
-      justify-content: center; /* Centra el contenido en el medio */
-      align-items: center; /* Centra verticalmente los elementos */
-      width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-      padding: 20px;
-      box-sizing: border-box; /* Asegura que el padding no sobrecargue el tamaño del contenedor */
-    }
-    
-    .eco {
+.titulo {
   display: flex;
-  justify-content: flex-start; /* Alinea el logo de ExEA a la izquierda */
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 120px; /* Ajusta el tamaño del contenedor de ExEA */
-  background-color:#175d8a ;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
-    .titulo-logo-exa {
-      width: 200px; /* Ajusta el tamaño del logo */
-      height: auto; /* Mantiene la proporción */
-    }
-    /* Estilo para el contenedor de AU */
-  .au {
-    display: flex;
-    justify-content: flex-end; /* Alinea los elementos dentro de AU a la derecha */
-    align-items: center; /* Centra los elementos verticalmente dentro de AU */
-    width: 250px; /* Ajusta el tamaño del logo */
-    margin-left: 20px; /* Le damos un poco de margen izquierdo para que no esté tan pegado al centro */
-  }
-  
-  /* Estilo para el logo de AU */
-  .titulo-logo-au {
-    width: 200px; /* Ajusta el tamaño del logo */
-    height: auto; /* Mantiene la proporción */
-  }
-  
-  /* Estilo para el texto centrado entre los logos */
-  .texto-centro {
-    display: flex;
-    justify-content: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra el texto verticalmente */
-    flex-grow: 1; /* Permite que el contenedor ocupe el espacio restante entre ExEA y AU */
-    text-align: center; /* Asegura que el texto se alinee al centro */
-    margin: 0 20px; /* Añade un pequeño margen a ambos lados */
-  }
-  
-  .texto-centro p {
-    color: #efe102; /* Color del texto */
-    font-size: 1.5em; /* Tamaño del texto */
-    font-weight: bold; /* Hace el texto más grueso */
-    margin: 0; /* Elimina el margen por defecto del párrafo */
-    align-items: center; /* Centra el texto verticalmente */
-  }
-  
+
+.eco {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 120px;
+  background-color: #175d8a;
+}
+
+.titulo-logo-exa {
+  width: 200px;
+  height: auto;
+}
+
+/* Estilo para el contenedor de AU */
+.au {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 250px;
+  margin-left: 20px;
+}
+
+/* Estilo para el logo de AU */
+.titulo-logo-au {
+  width: 200px;
+  height: auto;
+}
+
+/* Estilo para el texto centrado entre los logos */
+.texto-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.texto-centro p {
+  color: #efe102;
+  font-size: 1.2em; /* Tamaño ajustado para que no ocupe tanto espacio */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Modificación para que el eslogan no se superponga al logo */
+.eslogan {
+  color: #ffffff;
+  font-size: 0.6em;
+  font-weight: bold;
+  padding: 10px 0; /* Añadimos un poco de espacio vertical */
+  margin: 0;
+}  
   .fondo {
     background: #175d8a; /* Fondo negro */
     color:#d3edf2; /* Color blanco para el texto */
@@ -76,8 +85,6 @@
       <div class="titulo-principal">
         <h1>SOMOS EcEA-EconómicasEnAcción</h1>
       </div>
-
-      <!-- Contenedor de los logos y texto centrado -->
       <div class="titulo">
         <div class="eco">
           <img class="titulo-logo-eco" src="../IMAGENES/imagen eco.png" alt="logo ExEA">
@@ -89,7 +96,7 @@
           <img class="titulo-logo-au" src="../IMAGENES/Imagen_de_WhatsApp_2024-12-07_a_las_00.06.05_0b13824c-removebg-preview (1).png" alt="logo AU">
         </div>
       </div>
-    </div>
+      
 
       <!-- Menú -->
       <div class="menu">
