@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
-<title>  
-EcEA-EconómicasEnAcción  </title>
-<link rel="stylesheet" href="../archivos css/global.css
-    <link rel="stylesheet" href="../archivos css/header.css">
+<head>
+    <title>ExEA-ExactasEnAcción</title>
+    <link rel="stylesheet" href="../archivos css/global.css">
     <link rel="stylesheet" href="../archivos css/menu.css">
     <link rel="stylesheet" href="../archivos css/presentacion.css">
     <link rel="stylesheet" href="../archivos css/footer.css">
-    <link rel="stylesheet" href="../archivos css/titulo.css">
     <meta charset="UTF-8">
+    <style>
+      .titulo {
+      display: flex; /* Usamos Flexbox para organizar los elementos */
+      flex-direction: row; /* Coloca los elementos en fila */
+      justify-content: center; /* Centra el contenido en el medio */
+      align-items: center; /* Centra verticalmente los elementos */
+      width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+      padding: 20px;
+      box-sizing: border-box; /* Asegura que el padding no sobrecargue el tamaño del contenedor */
+    }
+    
+    .exa {
+  display: flex;
+  justify-content: flex-start; /* Alinea el logo de ExEA a la izquierda */
+  align-items: center;
+  width: 120px; /* Ajusta el tamaño del contenedor de ExEA */
+  background-color:#2e2c2f ;
+}
+    .titulo-logo-exa {
+      width: 200px; /* Ajusta el tamaño del logo */
+      height: auto; /* Mantiene la proporción */
+    }
+    /* Estilo para el contenedor de AU */
+  .au {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos dentro de AU a la derecha */
+    align-items: center; /* Centra los elementos verticalmente dentro de AU */
+    width: 250px; /* Ajusta el tamaño del logo */
+    margin-left: 20px; /* Le damos un poco de margen izquierdo para que no esté tan pegado al centro */
+  }
+  
+  /* Estilo para el logo de AU */
+  .titulo-logo-au {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+  }
+  
+  /* Estilo para el texto centrado entre los logos */
+  .texto-centro {
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    flex-grow: 1; /* Permite que el contenedor ocupe el espacio restante entre ExEA y AU */
+    text-align: center; /* Asegura que el texto se alinee al centro */
+    margin: 0 20px; /* Añade un pequeño margen a ambos lados */
+  }
+  
+  .texto-centro p {
+    color: #efe102; /* Color del texto */
+    font-size: 1.5em; /* Tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+    align-items: center; /* Centra el texto verticalmente */
+  }
+  
+  .fondo {
+    background: #2e2c2f; /* Fondo negro */
+    color: rgb(255, 255, 255); /* Color blanco para el texto */
+  }
+  
+    </style>
 </head>
 <body>
     <div class="container">
-      <!-- Títu
-       lo principal
-        --> <div class="titulo-principal"> 
-           <h1>SOMOS EcEA-EconómicasEnAcción</h1>
+      <!-- Título principal -->
+      <div class="titulo-principal">
+        <h1>SOMOS ExEA-ExactasEnAcción</h1>
     </div>
 
       <!-- Contenedor de los logos y texto centrado -->
       <div class="titulo">
         <div class="exa">
-<img src="../IMAGENES/Imagen_de_WhatsApp_2024-10-20_a_las_16.54.37_18581d7c-removebg-preview-removebg-preview.png" alt="">
-          <div class="texto-centro">
+          <img class="titulo-logo-exa" src="../../exactacenaccion.github.io/imagenes varias/image (2).png" alt="logo ExEA">
+        </div>
+        <div class="texto-centro">
           <p>"Libertad para pensar...Acción para cambiar"</p>
         </div>
         <div class="au">
-     <img src="../IMAGENES/Imagen_de_WhatsApp_2024-12-07_a_las_00.06.05_0b13824c-removebg-preview (1).png" alt="">
+          <img class="titulo-logo-au" src="../imagenes varias/Imagen_de_WhatsApp_2024-12-07_a_las_00.06.05_0b13824c-removebg-preview (1).png" alt="logo AU">
         </div>
       </div>
 
@@ -42,8 +100,7 @@ EcEA-EconómicasEnAcción  </title>
       <!-- Presentación -->
       <div class="presentacion">
         <p>
-          Somos un grupo de jóvenes liberales que se presentarán en el centro de estudiantes de la facultad de ciencias economicas de la UNICEN este 2025. A través de este medio vamos a estar subiendo las novedades, propuestas
-           y además para informar a nuestros seguidores de todas las novedades a lo largo del año.
+          Somos un grupo de jóvenes liberales que se presentaron en el centro de estudiantes de la facultad de ciencias exactas de la UNICEN en 2024. A través de este medio vamos a estar subiendo novedades propuestas y además para informar a nuestros seguidores de todas las novedades a lo largo del año.
           <b>"Libertad para pensar...Acción para cambiar"</b> 
         </p>
       </div>
@@ -51,11 +108,15 @@ EcEA-EconómicasEnAcción  </title>
 
     <!-- Footer -->
     <footer>
-  <a href="https://www.instagram.com/exactas.enaccion" class="instagram-link" target="_blank">
-        <img src="../IMAGENES/Imagen_de_WhatsApp_2024-10-20_a_las_16.54.37_18581d7c-removebg-preview-removebg-preview.png" alt="">  Visítanos en Instagram
+      <img class="footer-logo" src="../imagenes varias/image (2).png" alt="logo de la agrupación estudiantil exactas en acción">
+      <div class="footer-content">
+        <a href="https://www.instagram.com/exactas.enaccion" class="instagram-link" target="_blank">
+          <img src="../imagenes varias/instagram-removebg-preview.png" alt="Síguenos en Instagram" class="instagram-logo">
+          Visítanos en Instagram
         </a>
         <b class="eslogan"> "Libertad para pensar...Acción para cambiar"</b>
       </div>
     </footer>
   </body>
+ 
 </html>
