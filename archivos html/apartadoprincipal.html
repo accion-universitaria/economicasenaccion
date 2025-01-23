@@ -52,26 +52,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 1; /* Esto asegura que ocupe todo el espacio entre los logos */
   text-align: center;
-  margin: 0 20px;
+  margin: 0 30px; /* Aumento el margen para que el eslogan se aleje un poco de los logos */
+  padding: 10px 0; /* Añadimos espacio adicional arriba y abajo */
 }
 
 .texto-centro p {
   color: #efe102;
-  font-size: 1.2em; /* Tamaño ajustado para que no ocupe tanto espacio */
+  font-size: 1.2em;
   font-weight: bold;
   margin: 0;
+  padding: 0 20px; /* Añadimos un poco de espacio horizontal para que no se pegue al borde */
 }
 
 /* Modificación para que el eslogan no se superponga al logo */
 .eslogan {
   color: #ffffff;
-  font-size: 0.6em;
+  font-size: 1em; /* Ajustamos el tamaño para que sea un poco más grande y legible */
   font-weight: bold;
-  padding: 10px 0; /* Añadimos un poco de espacio vertical */
   margin: 0;
-}  
+}
+
   .fondo {
     background: #175d8a; /* Fondo negro */
     color:#d3edf2; /* Color blanco para el texto */
