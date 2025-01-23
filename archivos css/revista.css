@@ -8,14 +8,14 @@
 }
 
 .articulo {
-    background-color: #000000;
+    background-color: #2be3f0;
     padding: 2vw; /* Usamos vw para hacer que el padding crezca con el zoom */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: calc(30% - 20px); /* El ancho depende del tamaño de la ventana */
     min-width: 250px; /* Mínimo ancho para no colapsar en pantallas pequeñas */
     max-width: 100vw; /* Máximo ancho, asegura que no se extienda demasiado */
     box-sizing: border-box;
-    border: 7px solid #eeff06;
+    border: 7px solid #77acc3;
 }
 
 .articulo img {
