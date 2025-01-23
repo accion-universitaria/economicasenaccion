@@ -1,0 +1,57 @@
+.titulo {
+    display: flex; /* Usamos Flexbox para organizar los elementos */
+    flex-direction: row; /* Coloca los elementos en fila */
+    justify-content: center; /* Centra el contenido en el medio */
+    align-items: center; /* Centra verticalmente los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no sobrecargue el tamaño del contenedor */
+  }
+  
+  .exa {
+    display: flex;
+    justify-content: center; /* Alinea los elementos dentro de ExEA al centro */
+    align-items: center; /* Centra los elementos verticalmente dentro de ExEA */
+    width: 250px; /* Ajusta el tamaño del logo */
+  }
+  
+  .titulo-logo-exa {
+    width: 250px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+  }
+  /* Estilo para el contenedor de AU */
+.au {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos dentro de AU a la derecha */
+  align-items: center; /* Centra los elementos verticalmente dentro de AU */
+  width: 250px; /* Ajusta el tamaño del logo */
+  margin-left: 20px; /* Le damos un poco de margen izquierdo para que no esté tan pegado al centro */
+}
+
+/* Estilo para el logo de AU */
+.titulo-logo-au {
+  width: 200px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción */
+}
+
+/* Estilo para el texto centrado entre los logos */
+.texto-centro {
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  flex-grow: 1; /* Permite que el contenedor ocupe el espacio restante entre ExEA y AU */
+  text-align: center; /* Asegura que el texto se alinee al centro */
+  margin: 0 20px; /* Añade un pequeño margen a ambos lados */
+}
+
+.texto-centro p {
+  color: #efe102; /* Color del texto */
+  font-size: 1.5em; /* Tamaño del texto */
+  font-weight: bold; /* Hace el texto más grueso */
+  margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+
+.fondo {
+  background: #000000; /* Fondo negro */
+  color: rgb(255, 255, 255); /* Color blanco para el texto */
+}

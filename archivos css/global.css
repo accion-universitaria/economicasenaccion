@@ -1,0 +1,21 @@
+/* Estilos globales para la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Color de texto blanco */
+  }
+  
+  /* Estilo para el contenedor principal */
+  .container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna (verticalmente) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+  
+  p {
+    text-align: center;
+  }
+  

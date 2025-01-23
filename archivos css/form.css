@@ -1,0 +1,23 @@
+/* Estilo para el contenedor del formulario */
+.form-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 600px; /* Ajusta la altura del contenedor según sea necesario */
+    max-width: 100%; /* Evita que el contenedor se salga de la pantalla en dispositivos pequeños */
+    margin: 20px auto; /* Centra el contenedor horizontalmente y añade margen superior e inferior */
+    padding: 10px; /* Añade un pequeño espacio interior */
+    box-sizing: border-box; /* Asegura que el padding no sobrecargue el tamaño del contenedor */
+    background-color: #f4f4f4; /* Fondo suave para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave para el contenedor */
+    display: flex; /* Usa flexbox para alinear el iframe */
+    justify-content: center; /* Centra el iframe dentro del contenedor */
+    align-items: center; /* Centra el iframe verticalmente dentro del contenedor */
+  }
+  
+  .form-container iframe {
+    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+    height: 100%; /* El iframe ocupa toda la altura del contenedor */
+    border: none; /* Elimina el borde por defecto del iframe */
+    border-radius: 8px; /* Bordes redondeados para el iframe */
+  }
+  

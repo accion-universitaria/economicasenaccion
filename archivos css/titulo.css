@@ -1,0 +1,54 @@
+/* Estilo para el contenedor principal del título */
+.titulo {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos (izquierda y derecha) */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el contenedor de ExEA */
+.exa {
+  display: flex;
+  justify-content: flex-start; /* Alinea el logo de ExEA a la izquierda */
+  align-items: center;
+  width: 120px; /* Ajusta el tamaño del contenedor de ExEA */
+}
+
+/* Logo de ExEA */
+.titulo-logo-exa {
+  width: 150px; /* Reducción considerable del tamaño del logo */
+  height: auto;
+}
+
+/* Estilo para el contenedor de AU */
+.au {
+  display: flex;
+  justify-content: flex-end; /* Alinea el logo de AU a la derecha */
+  align-items: center;
+  width: 150px; /* Ajusta el tamaño del contenedor de AU */
+}
+
+/* Logo de AU */
+.titulo-logo-au {
+  width: 100px; /* Reducción del tamaño del logo de AU */
+  height: auto;
+}
+
+/* Estilo para el texto centrado entre los logos */
+.texto-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: center;
+  margin: 0 20px;
+}
+
+.texto-centro p {
+  color: #efe102;
+  font-size: 1.2em; /* Tamaño de texto ajustado */
+  font-weight: bold;
+  margin: 0;
+}
