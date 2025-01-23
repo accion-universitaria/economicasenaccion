@@ -6,7 +6,7 @@
     display: flex;                /* Flexbox para centrar el contenido */
     justify-content: left;      /* Centrar horizontalmente el contenido */
    text-align: center;
-    border: 10px solid #a65252;       /* Borde gris claro */
+    border: 10px solid #2db6cb;       /* Borde gris claro */
 }
 
 /* Estilos para el elemento interno */
