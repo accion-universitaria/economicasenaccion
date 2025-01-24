@@ -13,6 +13,7 @@
     justify-content: center; /* Alinea los elementos dentro de ExEA al centro */
     align-items: center; /* Centra los elementos verticalmente dentro de ExEA */
     width: 250px; /* Ajusta el tamaño del logo */
+    margin-left: 20px;
   }
   
   .titulo-logo-exa {
