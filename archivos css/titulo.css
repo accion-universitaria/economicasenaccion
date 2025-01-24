@@ -14,6 +14,7 @@
   justify-content: flex-start; /* Alinea el logo de ExEA a la izquierda */
   align-items: center;
   width: 120px; /* Ajusta el tamaño del contenedor de ExEA */
+  margin: 15px !important;
 }
 
 /* Logo de ExEA */
@@ -28,6 +29,7 @@
   justify-content: flex-end; /* Alinea el logo de AU a la derecha */
   align-items: center;
   width: 150px; /* Ajusta el tamaño del contenedor de AU */
+  margin: 15px !important;
 }
 
 /* Logo de AU */
