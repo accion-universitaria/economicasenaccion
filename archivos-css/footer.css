@@ -1,0 +1,33 @@
+/* Estilo para el footer */
+footer {
+    text-align: center;
+    background-color: #175d8a;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .footer-content {
+    margin-top: 20px;
+  }
+  
+  .instagram-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .instagram-logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+ 
+  .eslogan {
+    color: #ffffff;
+    font-size: 0.6em;
+    font-weight: bold;
+  }
+  

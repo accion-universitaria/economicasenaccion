@@ -1,0 +1,86 @@
+/* Estilo para el contenedor principal del título */
+.titulo {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos (izquierda y derecha) */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el contenedor de ExEA */
+.eco {
+  display: flex;
+  justify-content: flex-start; /* Alinea el logo de ExEA a la izquierda */
+  align-items: center;
+  width: 120px; /* Ajusta el tamaño del contenedor de ExEA */
+  margin: 15px !important;
+  background-color:  #175d8a;
+}
+
+/* Logo de ExEA */
+.titulo-logo-eco {
+  width: 150px; /* Reducción considerable del tamaño del logo */
+  height: auto;
+}
+
+/* Estilo para el contenedor de AU */
+.au {
+  display: flex;
+  justify-content: flex-end; /* Alinea el logo de AU a la derecha */
+  align-items: center;
+  width: 150px; /* Ajusta el tamaño del contenedor de AU */
+  margin: 15px !important;
+}
+
+/* Logo de AU */
+.titulo-logo-au {
+  width: 100px; /* Reducción del tamaño del logo de AU */
+  height: auto;
+}
+
+/* Estilo para el texto centrado entre los logos */
+.texto-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: center;
+  margin: 0 20px;  /* Añadimos algo de margen a los lados */
+  position: relative; /* Para controlar la posición del eslogan */
+}
+
+/* Estilo del eslogan */
+.texto-centro p {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aseguramos que el eslogan no interfiera con los logos */
+.texto-centro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modificación para la alineación vertical correcta */
+.eslogan {
+  color: #ffffff;
+  font-size: 1.2em; /* Ajustamos el tamaño para que sea un poco más grande y legible */
+  font-weight: bold;
+  margin: 0;
+  text-align: center; /* Centra el texto */
+  padding: 10px;
+}
