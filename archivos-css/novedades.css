@@ -2,7 +2,7 @@
 .panel {
     width: 89%;                  /* Ocupa todo el ancho disponible */
     height: 75%;                /* Altura del contenedor */
-    background-color: #175d8a;    /* Color de fondo gris claro */
+    background-color: #f0f0f0;    /* Color de fondo gris claro */
     display: flex;                /* Flexbox para centrar el contenido */
     justify-content: left;      /* Centrar horizontalmente el contenido */
    text-align: center;
