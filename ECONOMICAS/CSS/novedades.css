@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    width: 100%;
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor-articulos {
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+}
+
+/* ARTÍCULO INDIVIDUAL */
+.articulo {
+    background-color: #000;
+    color: #fff;
+    border: 5px solid #fff;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* TEXTO */
+.texto-articulo {
+    flex: 1 1 300px;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* CUERPO DE TEXTO */
+.texto-gral {
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* IMÁGENES */
+.CEFCE-logo, .portadas {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.portadas {
+    margin-left: 0;
+}
+
+/* ENCABEZADOS */
+h1, h2 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+h4.titulo-novedades {
+    font-size: 14px;
+    color: #b1a6a6;
+    margin-bottom: 5px;
+}
+
+.fechas {
+    font-size: 12px;
+    color: #175d8a;
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .articulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CEFCE-logo, .portadas {
+        width: 80px;
+    }
+
+    .texto-articulo {
+        text-align: left;
+    }
+}

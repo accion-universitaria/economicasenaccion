@@ -1,0 +1,60 @@
+.formContacto {
+  background: #ffffff;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formContacto input,
+.formContacto textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #1e3c72;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.formContacto input:focus,
+.formContacto textarea:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+}
+
+.formContacto textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formContacto button {
+  background: linear-gradient(to right, #26721e, #35982a);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formContacto button:hover {
+  background: linear-gradient(to right, #2a9833, #1e723e);
+}
+.inicio{
+  display: flex;
+  flex-direction:row;
+  gap: 10px;
+}
+.tituloform {
+  text-align: center;
+  color: #0d0d0e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}

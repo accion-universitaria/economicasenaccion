@@ -1,0 +1,222 @@
+
+  header, nav,main,footer {
+    width: 100%;
+  }  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+
+/* HEADER */
+header {
+    background-color: #175d8a;
+    width: 100%;
+    box-sizing: border-box;
+}
+header h3 {
+    color: #175d8a;
+    font-size: 22px; /* Letra más grande */
+    text-align: center;
+    margin-top: 10px;
+}
+/* ENCABEZADO */
+.encabezado {
+    text-align: center;
+    padding: 20px;
+}
+
+.encabezado h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.encabezado h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:#175d8a;
+}
+.encabezado .exa {
+    width: 276px;
+    height: 183px;
+    margin-right: 20px;
+}
+.encabezado .au {
+    width: 194px;
+    height: 205px;
+    margin-left: 20px;
+}
+
+/*MAIN*/
+/* CONTENEDOR PRINCIPAL DE ARTÍCULOS */
+main {
+    background-color: #175d8a;
+    max-width: 100%; /* Ancho fijo */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}/*BARRA GENERAL*/
+.barra {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.barra li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.barra a {
+    color: #000;
+    text-decoration: none;
+}
+.barra a:hover {
+    background-color: #175d8a; /* amarillo */
+    color: #000; /* negro */
+    padding: 5px 10px; /* un poco de relleno para que se vea mejor */
+    border-radius: 15px; /* esquinas redondeadas opcionales */
+    transition: 0.9s; /* animación suave */
+    border: 5px solid #000000;
+}
+/*BARRA DE CANDIDATOS*/
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 4px solid #eeff06;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .barra-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .barra-nav .logo img {
+    max-height: 40px;
+    width: auto;
+  }
+  
+  .barra-nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .barra-nav .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .barra-nav .nav-links li a:hover {
+    color: #eeff06;
+  }
+  .titulo-candidatos{
+    padding: 20px;
+  }
+  /* Menú hamburguesa */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    color: #ffffff;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .barra-nav {
+      flex-wrap: wrap;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
+/* FOOTER */
+footer {
+    background-color: #175d8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer .au {
+    width: 114px;
+    height: 103px;
+    margin-left: 20px;
+}
+footer .exa {
+    width: 156px;
+    height: 103px;
+    margin-right: 20px;
+}
+/* FOOTER BAR */
+.footer-barra {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 15px 0;
+    margin: 30px;
+    list-style: none;
+    transition:0.6s;
+}
+
+.footer-barra li {
+    margin: 0 15px;
+}
+
+.footer-barra a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.footer-barra a:hover {
+    background-color: #175d8a;
+    border: 2px solid #000;
+}

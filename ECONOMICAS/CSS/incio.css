@@ -1,0 +1,110 @@
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* HERO - FONDO DE PANTALLA */ 
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;  /* La imagen cubre todo el espacio */
+    background-position: center center; /* Centrado de la imagen */
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita*/ 
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: auto; /* Hace que la altura sea flexible según el contenido*/ 
+}
+/* TÍTULO */
+.titulo {
+    font-size: 2rem;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.titulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.9), transparent);
+    animation: brilloRapido 2s infinite;
+}
+
+/* LOGOS */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.logos .exa {
+    width: 276px;
+    height: 183px;
+}
+
+.logos .au {
+    width: 194px;
+    height: 205px;
+}
+
+/* ESLOGAN */
+.eslogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.eslogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.6), transparent);
+    animation: brillo 1s infinite;
+}
+
+/* CONTENIDO PRINCIPAL */
+.texto {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #e7d8d8;
+ 
+    border-radius: 10px;
+}
+/* FOOTER */
+footer {
+    background-color:#175d8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-barra {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-barra a {
+    color: white;
+    text-decoration: none;
+}
+

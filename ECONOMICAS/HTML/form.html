@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcEA-Economicas En Accion/formulario de contacto </title>
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/incio.css">
+    <link rel="stylesheet" href="../CSS/adaptación.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+</head>
+
+<body>
+    <header>
+         
+        <div class="header-contenido">
+               <button id="menu-toggle">☰</button>
+            <a class="logos" href="../HTML/inicio.html"> <img src="../IMAGENES/imagen eco.png" alt="Logo"></a>
+            <h1 class="titulo">EcEA - Economicas En Acción</h1>
+        </div>
+        <nav id="menu" class="menu oculto">
+            <ul>
+                <li><a href="inicio.html">MENÚ PRINCIPAL</a></li>
+                <li><a href="candidatos.html">CANDIDATOS 2025</a></li>
+                <li><a href="propuestas.html">PROPUESTAS 2025</a></li>
+                <li><a href="novedades.html">NOVEDADES 2025</a></li>
+                <li><a href="form.html">UNITE A ECONOMICAS EN ACCIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="tituloform">UNITE A ECONOMICAS EN ACCIÓN</h2>
+        <form class="formContacto" id="formContacto">
+            <div class="inicio">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            </div>
+            <input type="number" id="numerodetelefono" name="numerodetelefono" placeholder="Teléfono" required>
+            <input type="date" name="fechadenacimiento" id="fechadenacimiento" placeholder="Fecha de Nacimiento"
+                required>
+                <input type="email" name="correoelectronico " id="correoelectronico" placeholder="Correo Electrónico">
+            <input type="text" id="carrera" name="carrera" placeholder="Carrera" required>
+            <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="logos-footer">
+            <ul class="footer-barra">
+                <li>
+                    <a href="https://www.instagram.com/economicas.enaccion/" target="_blank">
+                        <img class="logo" src="../IMAGENES/imagen eco.png" alt="Logo ExEA">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/accion.universitaria" target="_blank">
+                        <img class="logo" src="../imagenes/au.png" alt="Logo AU">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h3>"Libertad para pensar...Acción para cambiar"</h3>
+    </footer>
+
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/formdatos.js"></script>
+</body>
+
+</html>

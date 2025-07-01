@@ -1,0 +1,54 @@
+main {
+    background-color: #12abe9;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: auto ;
+}
+
+/* NAV BAR */
+.barra {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.barra li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.barra a {
+    color: #000;
+    text-decoration: none;
+}
+.barra a:hover {
+    background-color: #12abe9; /* amarillo */
+    color: #000; /* negro */
+    padding: 5px 10px; /* un poco de relleno para que se vea mejor */
+    border-radius: 15px; /* esquinas redondeadas opcionales */
+    transition: 0.9s; /* animación suave */
+    border: 5px solid #000000;
+}
+/* ENCABEZADO */ 
+
+.encabezado {
+    height: 427px;
+    text-align: center;
+    background-image: url("../IMAGENES/fto\ nueva\ eco\ 29-6.jpg");
+    background-size: contain;         /* Hace que la imagen se vea completa */
+    background-repeat: no-repeat;     /* No repite la imagen */
+    background-position: center;      /* Centra la imagen */
+    margin-top:15px;
+}
+
+@media (width>=600px) {
+    .encabezado .hero{
+        height: 400px;
+    }
+}
