@@ -1,105 +1,117 @@
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header, nav, main, footer {
-    width: 100%;
-}
-
-/* GENERAL */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
 }
 
 /* CONTENEDOR PRINCIPAL */
 .contenedor-articulos {
-    margin: 20px auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: 1 columna */
+  gap: 24px;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
-/* ARTÍCULO INDIVIDUAL */
+/* ARTÍCULO */
 .articulo {
-    background-color: #000;
-    color: #fff;
-    border: 5px solid #fff;
-    padding: 1rem;
-    overflow: hidden;
-    border-radius: 10px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  background-color: #2a5298;
+  border: 3px solid #000;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(239, 225, 2, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-/* TEXTO */
+.articulo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(239, 225, 2, 0.6);
+}
+
+/* TEXTO INTERNO */
 .texto-articulo {
-    flex: 1 1 300px;
-    text-align: justify;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-/* CUERPO DE TEXTO */
-.texto-gral {
-    font-size: 1rem;
-    line-height: 1.6;
-    white-space: pre-line;
-}
-
-/* IMÁGENES */
-.CEFCE-logo, .portadas {
-    width: 120px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    align-self: center;
-}
-
-.portadas {
-    margin-left: 0;
+  text-align: left;
+  word-wrap: break-word;
 }
 
 /* ENCABEZADOS */
-h1, h2 {
-    font-size: 18px;
-    margin-bottom: 4px;
-    color: #fff;
-}
-
-h4.titulo-novedades {
-    font-size: 14px;
-    color: #b1a6a6;
-    margin-bottom: 5px;
-}
-
 .fechas {
-    font-size: 12px;
-    color: #175d8a;
-    margin-bottom: 6px;
+  font-size: 15px;
+  color: #efe102;
+  margin-bottom: 6px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 600px) {
-    .articulo {
-        flex-direction: column;
-        align-items: center;
-    }
+h2 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
 
-    .CEFCE-logo, .portadas {
-        width: 80px;
-    }
+.titulo-novedades {
+  padding: 5px;
+  font-size: 25px;
+  color: #efe7e7;
+  margin-bottom: 8px;
+}
 
-    .texto-articulo {
-        text-align: left;
-    }
+/* TEXTO DE NOTICIA */
+.texto-noticia {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* IMÁGENES */
+.portadas {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* BOTÓN INSTAGRAM */
+#instagramButton {
+  background-color: #12abe9;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+#instagramButton:hover {
+  background-color: #1964dc;
+  color: #fff;
+}
+
+/* ENLACES */
+a {
+  color: #efe102;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERY: 2 columnas en tablet+ */
+@media (min-width: 768px) {
+  .contenedor-articulos {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -28,9 +28,9 @@
 }
 
 .menu {
-  background-color: white;
+  background-color: rgb(249, 240, 240);
   padding: 10px 0;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid #175d8a;
 }
 
 .menu ul {
